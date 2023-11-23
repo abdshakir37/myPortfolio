@@ -18,7 +18,7 @@ const Contact = () => {
           className="flex flex-col max-w-[600px] w-full pt-4"
         >
           <input
-            className="bg-[#ccd6f6] focus:bg-white p-2  placeholder-gray-600 focus:placeholder-opacity-50 border-2 focus:border-pink-600 rounded-sm outline-none  duration-300 "
+            className="bg-[#ccd6f6] focus:bg-white p-2 placeholder-gray-600 focus:placeholder-opacity-50 border-2 focus:border-pink-600 rounded-sm outline-none duration-300 "
             type="text"
             placeholder="Name"
             name="name"
