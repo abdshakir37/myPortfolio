@@ -1,6 +1,19 @@
+import { motion } from "framer-motion";
 import React from "react";
 
+
 const About = () => {
+  const aboutVariant = {
+    initial: {
+      opacity: 0,
+      x: 200,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+    },
+  };
+
   return (
     <div name="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
       <div className="flex flex-col justify-center items-center w-full h-full">
@@ -11,7 +24,14 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-1">
+        <motion.div
+          className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-1"
+          variants={aboutVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          transition={{ type: "spring", duration: 1.5 }}
+        >
           <div className=" sm:text-right text-2xl md:text-4xl font-bold px-2">
             <p> Hi again!</p>
             <p> Here is a little bit of me and my journey into web dev.</p>
@@ -30,7 +50,7 @@ const About = () => {
               will make my works smoother and easier.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
