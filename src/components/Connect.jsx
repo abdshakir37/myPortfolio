@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const Connect = () => {
   return (
     <div name="contact" className="w-full ">
       <div className="max-w-[1000px] mx-auto flex flex-col justify-center w-full pt-20 px-8">
@@ -42,4 +42,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Connect;
